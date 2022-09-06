@@ -1,0 +1,68 @@
+// Optionals
+var myString:String? = nil
+
+if myString != nil {
+  print(myString)
+} else {
+  print("myString has nil value")
+}
+
+
+var myString:String?
+
+myString = "Hello, Swift "
+
+if myString != nil {
+  print(myString)
+} else {
+  print("myString has nil value")
+}
+
+
+var ages : [Int] = []
+// ages.sort()
+print(ages)
+
+//if let
+if let oldestAge = ages.last{
+    print("The oldest age is \(oldestAge)")
+    }else{
+        print("There is no oldest age, You must have no Students")
+    }
+    
+    
+var ages  = [25,15,69,85,76,11]
+ages.sort()
+print(ages)
+
+//if let
+if let oldestAge = ages.last{
+    print("The oldest age is \(oldestAge)")
+    }else{
+        print("There is no oldest age, You must have no Students")
+    }
+    
+    //nil coalescing
+    var ages  = [25,15,69,85,76,11]
+    let oldestAge = ages.last ?? 999
+    print(oldestAge)
+    
+    var ages : [Int] = []
+    let oldestAge = ages.last ?? 500
+    print(oldestAge)
+    
+    guard Statement
+    var ages  = [25,15,69,85,76,11]
+    func getOldestAge(){
+        guard let oldestAge = ages.last else {
+            return 
+        }
+        print(oldestAge)
+    }
+    getOldestAge()
+    
+    
+    Force unwrap
+    var ages  = [25,15,69,85,76,11]
+    let oldestAge = ages.last!
+    print(oldestAge)

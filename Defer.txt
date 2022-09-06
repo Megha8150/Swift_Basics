@@ -1,0 +1,9 @@
+ //defer
+    func readFile() {
+        defer {print("C. Cleaning file")}
+        defer { print("D. Editing file")}
+        defer {print("E. Closing file")}
+        print("A. Opening file")
+        print("B. Reading file")
+    }
+    readFile() 
