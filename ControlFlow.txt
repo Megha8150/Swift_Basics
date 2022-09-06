@@ -1,0 +1,63 @@
+Control Flow
+let individualScores = [25, 31, 10, 45, 35]
+var teamscore = 0
+for score in individualScores
+{
+    if score > 30{
+      teamscore+=3  
+    }
+    
+    else{
+        teamscore+=1
+    }
+}
+  print(teamscore)
+
+var optionalString: String? = "Hello"
+print(optionalString == nil)
+Prints "false"
+
+var optionalName = "Megh"
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+    print(greeting)
+    }
+    else
+    {
+        print("name is null")
+    }
+
+let nickname: String? = "Megh"
+let fullName: String = "John Appleseed"
+let informalGreeting = "Hi \(nickname ?? fullName)"
+print(informalGreeting)
+
+if let nickname :String? = "Megh"{
+    print("Hey, \(nickname)")
+}
+
+let interestingNumbers = [
+    "Prime": [2, 3, 5, 7, 11, 13],
+    "Fibonacci": [1, 1, 2, 3, 5, 8],
+    "Square": [1, 4, 9, 16, 25],
+]
+var largest = 0
+var nickname: String? = nil
+for (key ,numbers) in interestingNumbers {
+    for number in numbers {
+        if number > largest {
+            largest = number
+         nickname = key
+        }
+    }
+}
+print(nickname)
+print(largest)
+
+//Tuples
+var product = ("MacBook", 1099.99)
+print("Name:" ,product.0)
+print("Price:" ,product.1)
+product.1 = 1229.23
+print("Price:" ,product.1)

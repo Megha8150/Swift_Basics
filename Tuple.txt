@@ -1,0 +1,6 @@
+//Tuples
+var product = ("MacBook", 1099.99)
+print("Name:" ,product.0)
+print("Price:" ,product.1)
+product.1 = 1229.23
+print("Price:" ,product.1)

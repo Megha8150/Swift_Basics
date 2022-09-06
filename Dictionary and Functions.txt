@@ -1,0 +1,39 @@
+Dictionary
+let devices:[String:String] = ["phone":"iphone X", "laptop": "2016 MAcBook Pro", "tablet": "2018 ipad Pro"]
+print(devices)
+print(devices["laptop"])
+
+Dictionary
+var Occupations = ["Virat":"Captain","Chahal":"Bowler"]
+ Occupations["Virat"]="Batsman"
+
+ Occupations["Dhoni"]="Batsman"
+ print(Occupations)
+
+
+var occupations = [
+    "Malcolm": "Captain",
+    "Kaylee": "Mechanic",
+]
+occupations["Jayne"] = "Public Relations"
+print(occupations)
+
+
+
+
+Functions
+func printInstructorName(){
+    print("Meghana")
+}
+printInstructorName()
+
+func printInstructor(name:String){
+    print(name)
+}
+printInstructor(name:"Megh")
+
+func add(firstNumber:Int, secondNumber:Int) {
+    let sum = firstNumber + secondNumber
+    print(sum)
+}
+add(firstNumber:8, secondNumber:12)

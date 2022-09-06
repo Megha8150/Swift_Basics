@@ -1,0 +1,16 @@
+print("Hello World")
+let label = "The width is "
+let width = 94
+let widthLabel = label + String(width)
+print (widthLabel)
+
+
+
+
+Arraylist
+var shoppingList = ["catfish", "water", "tulips"]
+shoppingList[1] = "bottle of water"
+print (shoppingList[0])
+print (shoppingList[1])
+shoppingList.append("blue paint")
+print(shoppingList)

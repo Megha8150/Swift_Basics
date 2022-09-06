@@ -1,0 +1,16 @@
+Array
+var ages = [21, 55, 19, 47, 22, 88, 55]
+print(ages.count)
+print(ages.first)
+print(ages.last)
+print(ages[0])
+ages.append(99)
+print(ages)
+
+set
+var ages = [18,35,55,17,94,33,17]
+var agesSet = Set(ages)
+print(agesSet)
+print(agesSet.contains(17))
+agesSet.insert(101)
+print(agesSet)
